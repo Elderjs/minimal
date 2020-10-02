@@ -15,7 +15,7 @@ For reference:
 To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
 
 ```bash
-npx degit Elderjs/minimal-template elderjs-minimial
+npx degit Elderjs/minimal elderjs-minimial
 cd elderjs-minimial
 ```
 
