@@ -1,7 +1,7 @@
 module.exports = {
-  all: () => [{ slug: 'simple' }],
+  all: async () => [{ slug: 'simple' }],
   permalink: ({ request }) => `/${request.slug}/`,
-  data: () => {
+  data: async () => {
     return {};
   },
 };
