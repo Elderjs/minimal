@@ -2,7 +2,7 @@
 
 <img src="https://img.shields.io/badge/dynamic/json?color=brightgreen&label=Node&query=engines.node&url=https%3A%2F%2Fraw.githubusercontent.com%2Felderjs%2Ftemplate%2Fmaster%2Fpackage.json" alt="node version" />
 
-This is a **minimal** project template for [Elder.js](https://elderguide.com/tech/elderjs/) apps. The full template lives at https://github.com/elderjs/template.
+This is a **minimal** project template for [Elder.js](https://elderguide.com/tech/elderjs/) apps.
 
 If you are new you should start with the full template: https://github.com/elderjs/template
 
