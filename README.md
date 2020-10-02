@@ -7,8 +7,9 @@ This is a **minimal** project template for [Elder.js](https://elderguide.com/tec
 If you are new you should start with the full template: https://github.com/elderjs/template
 
 For reference:
-* Elder.js source is here: https://github.com/elderjs/elderjs
-* Elder.js Docs are on [ElderGuide.com](https://elderguide.com/tech/elderjs/)
+
+- Elder.js source is here: https://github.com/elderjs/elderjs
+- Elder.js Docs are on [ElderGuide.com](https://elderguide.com/tech/elderjs/)
 
 ## Get started
 
