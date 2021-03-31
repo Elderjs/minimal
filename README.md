@@ -1,18 +1,17 @@
-# Elder.js Template Project
+# Minimal Elder.js Template Project
 
 <img src="https://img.shields.io/badge/dynamic/json?color=brightgreen&label=Node&query=engines.node&url=https%3A%2F%2Fraw.githubusercontent.com%2Felderjs%2Ftemplate%2Fmaster%2Fpackage.json" alt="node version" />
-
-This is a project template for [Elder.js](https://elderguide.com/tech/elderjs/) apps. The template lives at https://github.com/elderjs/template and the Elder.js source is here: https://github.com/elderjs/elderjs
-
-Here is a demo of the template: [https://elderjs.netlify.app/](https://elderjs.netlify.app/)
-
+This is a **minimal** project template for [Elder.js](https://elderguide.com/tech/elderjs/) apps.
+If you are new you should start with the full template: https://github.com/elderjs/template
+For reference:
+- Elder.js source is here: https://github.com/elderjs/elderjs
+- Elder.js Docs are on [ElderGuide.com](https://elderguide.com/tech/elderjs/)
 ## Get started
-
 To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
 
 ```bash
-npx degit Elderjs/template elderjs-app
-cd elderjs-app
+npx degit Elderjs/minimal elderjs-minimal
+cd elderjs-minimal
 ```
 
 ### Install the dependencies:
@@ -32,7 +31,6 @@ Navigate to [localhost:3000](http://localhost:3000). You should see your app run
 ### Development:
 
 For development, we recommend running two separate terminals. One for the server and the other for rollup.
-
 **Terminal 1**
 
 ```bash
