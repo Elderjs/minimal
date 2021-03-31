@@ -1,9 +1,5 @@
 module.exports = {
-  all: async () => [{ slug: '/' }],
+  all: () => [{ slug: '/' }],
   permalink: ({ request }) => request.slug,
-  data: async () => {
-    return {
-      works: true,
-    };
-  },
+  data: ({ data }) => {},
 };

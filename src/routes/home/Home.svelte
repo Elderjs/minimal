@@ -1,13 +1,12 @@
 <script>
-  export let data, helpers,  request, settings;
-  import Clock from '../../components/Clock.svelte'
+  import Clock from '../../components/Clock.svelte';
 </script>
 
+<style>
+</style>
+
 <svelte:head>
-  <title>Home | Elderjs minimal</title>
-  <meta name="description" content="Put your description here." />
+  <title>Elder.js Template: Home</title>
 </svelte:head>
 
 <Clock hydrate-client={{}} />
-
-<a href="/simple/">Simple</a>

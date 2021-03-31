@@ -8,7 +8,7 @@ const hooks = [
     name: 'copyAssetsToPublic',
     description:
       'Copies ./assets/ to the "distDir" defined in the elder.config.js. This function helps support the live reload process.',
-    run: async ({ settings }) => {
+    run: ({ settings }) => {
       // note that this function doesn't manipulate any props or return anything.
       // It is just executed on the 'bootstrap' hook which runs once when Elder.js is starting.
 
@@ -17,16 +17,10 @@ const hooks = [
         const parsed = path.parse(file);
         // Only write the file/folder structure if it has an extension
         if (parsed.ext && parsed.ext.length > 0) {
-          const relativeToAssetsArray = parsed.dir.split('assets');
-          relativeToAssetsArray.shift();
-
-          const relativeToAssetsFolder = `.${relativeToAssetsArray.join()}/`;
-          const p = path.parse(path.resolve(settings.distDir, relativeToAssetsFolder));
-          fs.ensureDirSync(p.dir);
-          fs.outputFileSync(
-            path.resolve(settings.distDir, `${relativeToAssetsFolder}${parsed.base}`),
-            fs.readFileSync(file),
-          );
+          const relativeToAssetsFolder = path.relative(path.join(settings.rootDir, './assets'), file);
+          const outputPath = path.resolve(settings.distDir, relativeToAssetsFolder);
+          fs.ensureDirSync(path.parse(outputPath).dir);
+          fs.outputFileSync(outputPath, fs.readFileSync(file));
         }
       });
     },
